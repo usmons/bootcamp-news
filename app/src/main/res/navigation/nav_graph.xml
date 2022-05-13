@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsPagerFragment">
+
+    <fragment
+        android:id="@+id/newsPagerFragment"
+        android:name="io.usmon.bootcampnews.presentation.news_pages.NewsPagerFragment"
+        android:label="fragment_news_pager"
+        tools:layout="@layout/fragment_news_pager" />
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="io.usmon.bootcampnews.presentation.news_detail.NewsDetailFragment"
+        android:label="fragment_news_detail"
+        tools:layout="@layout/fragment_news_detail" />
+</navigation>
